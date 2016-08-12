@@ -145,7 +145,7 @@ simpsons_data = ("male bart",
                  "parent homer maggie",
                  "parent abe homer")
 TEST_RESULTS_6 = forward_chain(family_rules,
-                               simpsons_data,verbose=True)
+                               simpsons_data,verbose=False)
 # You can test your results by uncommenting this line:
 # print forward_chain(family_rules, simpsons_data, verbose=False)
 
@@ -176,7 +176,7 @@ black_data = ("male sirius",
 
 black_family_cousins = [ 
     x for x in 
-    forward_chain(family_rules, black_data, verbose=True) 
+    forward_chain(family_rules, black_data, verbose=False) 
     if "cousin" in x ]
 
 # To see if you found them all, uncomment this line:
@@ -194,7 +194,7 @@ TEST_DATA_1 = [ 'female alice',
                 'parent chuck alice',
                 'parent chuck bob' ]
 TEST_RESULTS_1 = forward_chain(family_rules, 
-                               TEST_DATA_1, verbose=True)
+                               TEST_DATA_1, verbose=False)
 
 TEST_DATA_2 = [ 'female a1', 'female b1', 'female b2', 
                 'female c1', 'female c2', 'female c3', 
@@ -212,7 +212,7 @@ TEST_DATA_2 = [ 'female a1', 'female b1', 'female b2',
                 'parent c4 d4' ]
 
 TEST_RESULTS_2 = forward_chain(family_rules, 
-                               TEST_DATA_2, verbose=True)
+                               TEST_DATA_2, verbose=False)
 
 
 ## Section 2: Goal trees and backward chaining ##
@@ -224,7 +224,7 @@ from backchain import backchain_to_goal_tree
 ##; Section 3: Survey ##
 # Please answer these questions inside the double quotes.
 
-HOW_MANY_HOURS_THIS_PSET_TOOK = ''
-WHAT_I_FOUND_INTERESTING = ''
-WHAT_I_FOUND_BORING = ''
+HOW_MANY_HOURS_THIS_PSET_TOOK = '-'
+WHAT_I_FOUND_INTERESTING = '-'
+WHAT_I_FOUND_BORING = '-'
 
